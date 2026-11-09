@@ -10,6 +10,8 @@ SON = [e for e in DAYS if e["kind"] == "sonnet"]
 BON = [e for e in DAYS if e["kind"] == "bonus"]
 EM, EN = "\u2014", "\u2013"
 SRC = os.path.join(ROOT, "src")
+SKIP = {1, 4, 72}
+KEPT = [n for n in range(1, 155) if n not in SKIP]
 
 try:
     import pytest; Skip = pytest.skip.Exception
@@ -30,11 +32,17 @@ def roman(n):
 def norm(s):
     return re.sub(r"\s+", " ", s.replace("_", "")).strip()
 
-def test_all_154_in_quarto_order():
-    assert [e["number"] for e in SON] == list(range(1, 155))
+def test_151_in_quarto_order_with_skips():
+    assert [e["number"] for e in SON] == KEPT
     assert [e["day"] for e in DAYS] == list(range(1, len(DAYS) + 1))
     assert all(e["roman"] == roman(e["number"]) for e in SON)
-    assert DAYS[:154] == SON, "bonus days must come after Sonnet 154"
+    assert DAYS[:151] == SON, "bonus days must come after the last kept sonnet"
+    assert PLAN["meta"]["sonnets"] == 151 and PLAN["meta"]["omitted"] == [1, 4, 72]
+    assert SON[0]["number"] == 2 and SON[0]["day"] == 1
+
+def test_no_niggard_in_served_data():
+    blob = json.dumps(PLAN)
+    assert "niggard" not in blob.lower()
 
 def test_bonus_is_a_few_days():
     assert 3 <= len(BON) <= 10
@@ -73,23 +81,45 @@ def test_famous_lines_present():
     assert "Let me not to the marriage of true minds" in t[116]
     assert t[130].startswith("My mistress’ eyes are nothing like the sun")
     assert "When in disgrace with fortune and men’s eyes" in t[29]
+    assert 1 not in t and 4 not in t and 72 not in t
 
 def test_groups():
     g = {e["number"]: e["groups"] for e in SON}
-    assert all("Fair Youth" in g[n] for n in range(1, 127))
+    for n in KEPT:
+        if n <= 126:
+            assert "Fair Youth" in g[n], n
+        if n <= 17:
+            assert "Marriage sonnets" in g[n], n
     assert all("Rival Poet" in g[n] for n in range(78, 87)) and "Rival Poet" not in g[77] + g[87]
     assert all("Dark Lady" in g[n] for n in range(127, 153))
-    assert all("Marriage sonnets" in g[n] for n in range(1, 18)) and "Marriage sonnets" not in g[18]
+    assert "Marriage sonnets" not in g[18]
     assert g[153] == g[154] == ["Cupid sonnets"]
     assert all(e["groups"] == ["Bonus"] for e in BON)
     assert set(x for e in DAYS for x in e["groups"]) <= set(PLAN["meta"]["groups"])
 
 def test_notes_quote_only_real_words():
+    def fold(s):
+        return s.lower().replace("\u2019", "'").replace("\u2018", "'")
     for e in DAYS:
         if e.get("note"):
             for q in re.findall(r'"([^"]+)"', e["note"]):
-                if q != "Will":
-                    assert q.lower() in e["text"].lower(), (e["day"], q)
+                if q not in ("Will", "Bastards"):
+                    assert fold(q) in fold(e["text"]), (e["day"], q)
+
+def test_medium_notes_present():
+    need_notes = {
+        20: "Prick", 37: "Lame", 55: "Sluttish", 57: "Slave", 58: "Slave",
+        66: "Strumpeted", 68: "Bastard", 89: "Lameness", 124: "Bastard",
+        127: "Black", 129: "lust", 130: "Black wires", 131: "Black", 132: "foul",
+        133: "Slave to slavery", 135: "Will", 136: "Will", 143: "Will",
+        144: "Hell", 147: "Black as hell", 151: "Flesh",
+    }
+    by_num = {e["number"]: e for e in SON}
+    for n, needle in need_notes.items():
+        note = by_num[n].get("note") or ""
+        assert needle.lower() in note.lower(), (n, note)
+    lac2 = [e for e in BON if e["title"].endswith("part 2 of 3")][0]
+    assert "Bastards" in (lac2.get("note") or "")
 
 def test_links_are_gutenberg_html():
     for e in DAYS:
@@ -115,6 +145,8 @@ def test_no_junk_in_text():
 def test_skills_rules():
     need(os.path.join(ROOT, "skills"), "skill drafts live with the bot, not in this repo")
     for f in os.listdir(os.path.join(ROOT, "skills")):
+        if not f.endswith(".md"):
+            continue
         s = open(os.path.join(ROOT, "skills", f), encoding="utf-8").read()
         assert EM not in s and EN not in s, f
         assert "Questions or ideas? Contact Omega Games at john@playomega.games." in s, f
@@ -122,18 +154,22 @@ def test_skills_rules():
         urls = re.findall(r"https?://[^\s)\"'`]+", s)
         assert ("getting-started" not in f or urls) and all(u.startswith("https://raw.githubusercontent.com/Play-Omega-Games/sonnet-a-day/main/") for u in urls), (f, urls)
         assert "allowCustom" in s, f
+        assert "**This bot never...**" in s, f
 
 def test_names_and_ids():
     need(os.path.join(ROOT, "skills"), "skill drafts live with the bot, not in this repo")
-    files = sorted(os.listdir(os.path.join(ROOT, "skills")))
+    files = sorted(f for f in os.listdir(os.path.join(ROOT, "skills")) if f.endswith(".md"))
     assert files == ["sonnet-a-day-daily.md", "sonnet-a-day-getting-started.md"], files
     for f in files:
         s = open(os.path.join(ROOT, "skills", f), encoding="utf-8").read()
         assert re.search(r"^name: " + re.escape(f[:-3]) + r"$", s, re.M), f
         assert "Shakespeare's Sonnets" not in s and "shakespeare-sonnets" not in s, f
+        assert "of 151" in s or "151 sonnets" in s or "151 of the 154" in s, f
+        assert "niggard" not in s.lower(), f
     assert PLAN["meta"]["title"] == "Sonnet a Day"
     g = open(os.path.join(ROOT, "skills", "sonnet-a-day-getting-started.md"), encoding="utf-8").read()
     assert 'titled "Sonnet a Day"' in g and "Bonus is on by default" in g
+    assert "Sonnet 2" in g and "Start over at Sonnet 2" in g
 
 if __name__ == "__main__":
     import sys

@@ -1,46 +1,29 @@
 {
  "meta": {
   "title": "Sonnet a Day",
-  "days": 163,
-  "sonnets": 154,
+  "days": 160,
+  "sonnets": 151,
   "bonus": 9,
-  "order": "1609 Quarto order, Sonnets 1 to 154, then optional bonus days",
+  "omitted": [
+   1,
+   4,
+   72
+  ],
+  "order": "1609 Quarto order, 151 of the 154 sonnets (Quarto 1, 4 and 72 omitted), then optional bonus days",
   "groups": {
-   "Fair Youth": "Sonnets 1 to 126, addressed to a young man",
-   "Marriage sonnets": "Sonnets 1 to 17, urging the young man to marry",
+   "Fair Youth": "Quarto sonnets 2 to 126 (1, 4 and 72 omitted), addressed to a young man",
+   "Marriage sonnets": "Quarto sonnets 2, 3 and 5 to 17, urging the young man to marry",
    "Rival Poet": "Sonnets 78 to 86, about a rival poet",
    "Dark Lady": "Sonnets 127 to 152, about a woman with dark eyes and hair",
    "Cupid sonnets": "Sonnets 153 and 154, two versions of one Greek epigram",
    "Bonus": "Optional days after Sonnet 154"
   },
   "groups_note": "These group names are traditional labels used by later readers. The 1609 Quarto prints the sonnets with numbers only.",
-  "built": "2026-10-31"
+  "built": "2026-11-09"
  },
  "days": [
   {
    "day": 1,
-   "kind": "sonnet",
-   "number": 1,
-   "roman": "I",
-   "title": "Sonnet 1",
-   "first_line": "From fairest creatures we desire increase,",
-   "groups": [
-    "Fair Youth",
-    "Marriage sonnets"
-   ],
-   "lines": 14,
-   "text": "From fairest creatures we desire increase,\nThat thereby beauty’s rose might never die,\nBut as the riper should by time decease,\nHis tender heir might bear his memory:\nBut thou, contracted to thine own bright eyes,\nFeed’st thy light’s flame with self-substantial fuel,\nMaking a famine where abundance lies,\nThyself thy foe, to thy sweet self too cruel:\nThou that art now the world’s fresh ornament,\nAnd only herald to the gaudy spring,\nWithin thine own bud buriest thy content,\nAnd tender churl mak’st waste in niggarding:\nPity the world, or else this glutton be,\nTo eat the world’s due, by the grave and thee.",
-   "couplet": "Pity the world, or else this glutton be,\nTo eat the world’s due, by the grave and thee.",
-   "note": "Sonnets 1 to 17 urge a young man to marry and have children, so readers often call them the marriage sonnets.",
-   "published": "Shake-speares Sonnets (1609 Quarto), modernized spelling",
-   "full_text_link": "https://www.gutenberg.org/cache/epub/1041/pg1041-images.html",
-   "link_lands_on_poem": false,
-   "look_for": "I",
-   "verified": true,
-   "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
-  },
-  {
-   "day": 2,
    "kind": "sonnet",
    "number": 2,
    "roman": "II",
@@ -62,7 +45,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 3,
+   "day": 2,
    "kind": "sonnet",
    "number": 3,
    "roman": "III",
@@ -84,29 +67,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 4,
-   "kind": "sonnet",
-   "number": 4,
-   "roman": "IV",
-   "title": "Sonnet 4",
-   "first_line": "Unthrifty loveliness, why dost thou spend",
-   "groups": [
-    "Fair Youth",
-    "Marriage sonnets"
-   ],
-   "lines": 14,
-   "text": "Unthrifty loveliness, why dost thou spend\nUpon thyself thy beauty’s legacy?\nNature’s bequest gives nothing, but doth lend,\nAnd being frank she lends to those are free:\nThen, beauteous niggard, why dost thou abuse\nThe bounteous largess given thee to give?\nProfitless usurer, why dost thou use\nSo great a sum of sums, yet canst not live?\nFor having traffic with thyself alone,\nThou of thyself thy sweet self dost deceive:\nThen how when nature calls thee to be gone,\nWhat acceptable audit canst thou leave?\nThy unused beauty must be tombed with thee,\nWhich, used, lives th’ executor to be.",
-   "couplet": "Thy unused beauty must be tombed with thee,\nWhich, used, lives th’ executor to be.",
-   "note": null,
-   "published": "Shake-speares Sonnets (1609 Quarto), modernized spelling",
-   "full_text_link": "https://www.gutenberg.org/cache/epub/1041/pg1041-images.html",
-   "link_lands_on_poem": false,
-   "look_for": "IV",
-   "verified": true,
-   "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
-  },
-  {
-   "day": 5,
+   "day": 3,
    "kind": "sonnet",
    "number": 5,
    "roman": "V",
@@ -128,7 +89,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 6,
+   "day": 4,
    "kind": "sonnet",
    "number": 6,
    "roman": "VI",
@@ -150,7 +111,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 7,
+   "day": 5,
    "kind": "sonnet",
    "number": 7,
    "roman": "VII",
@@ -172,7 +133,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 8,
+   "day": 6,
    "kind": "sonnet",
    "number": 8,
    "roman": "VIII",
@@ -194,7 +155,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 9,
+   "day": 7,
    "kind": "sonnet",
    "number": 9,
    "roman": "IX",
@@ -216,7 +177,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 10,
+   "day": 8,
    "kind": "sonnet",
    "number": 10,
    "roman": "X",
@@ -238,7 +199,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 11,
+   "day": 9,
    "kind": "sonnet",
    "number": 11,
    "roman": "XI",
@@ -260,7 +221,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 12,
+   "day": 10,
    "kind": "sonnet",
    "number": 12,
    "roman": "XII",
@@ -282,7 +243,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 13,
+   "day": 11,
    "kind": "sonnet",
    "number": 13,
    "roman": "XIII",
@@ -304,7 +265,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 14,
+   "day": 12,
    "kind": "sonnet",
    "number": 14,
    "roman": "XIV",
@@ -326,7 +287,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 15,
+   "day": 13,
    "kind": "sonnet",
    "number": 15,
    "roman": "XV",
@@ -348,7 +309,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 16,
+   "day": 14,
    "kind": "sonnet",
    "number": 16,
    "roman": "XVI",
@@ -370,7 +331,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 17,
+   "day": 15,
    "kind": "sonnet",
    "number": 17,
    "roman": "XVII",
@@ -392,7 +353,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 18,
+   "day": 16,
    "kind": "sonnet",
    "number": 18,
    "roman": "XVIII",
@@ -413,7 +374,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 19,
+   "day": 17,
    "kind": "sonnet",
    "number": 19,
    "roman": "XIX",
@@ -434,7 +395,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 20,
+   "day": 18,
    "kind": "sonnet",
    "number": 20,
    "roman": "XX",
@@ -446,7 +407,7 @@
    "lines": 14,
    "text": "A woman’s face with nature’s own hand painted,\nHast thou, the master mistress of my passion;\nA woman’s gentle heart, but not acquainted\nWith shifting change, as is false women’s fashion:\nAn eye more bright than theirs, less false in rolling,\nGilding the object whereupon it gazeth;\nA man in hue all ‘hues’ in his controlling,\nWhich steals men’s eyes and women’s souls amazeth.\nAnd for a woman wert thou first created;\nTill Nature, as she wrought thee, fell a-doting,\nAnd by addition me of thee defeated,\nBy adding one thing to my purpose nothing.\nBut since she prick’d thee out for women’s pleasure,\nMine be thy love and thy love’s use their treasure.",
    "couplet": "But since she prick’d thee out for women’s pleasure,\nMine be thy love and thy love’s use their treasure.",
-   "note": null,
+   "note": "\"Prick’d\" here means marked or chosen; the line also plays on a bawdy sense of the word.",
    "published": "Shake-speares Sonnets (1609 Quarto), modernized spelling",
    "full_text_link": "https://www.gutenberg.org/cache/epub/1041/pg1041-images.html",
    "link_lands_on_poem": false,
@@ -455,7 +416,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 21,
+   "day": 19,
    "kind": "sonnet",
    "number": 21,
    "roman": "XXI",
@@ -476,7 +437,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 22,
+   "day": 20,
    "kind": "sonnet",
    "number": 22,
    "roman": "XXII",
@@ -497,7 +458,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 23,
+   "day": 21,
    "kind": "sonnet",
    "number": 23,
    "roman": "XXIII",
@@ -518,7 +479,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 24,
+   "day": 22,
    "kind": "sonnet",
    "number": 24,
    "roman": "XXIV",
@@ -539,7 +500,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 25,
+   "day": 23,
    "kind": "sonnet",
    "number": 25,
    "roman": "XXV",
@@ -560,7 +521,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 26,
+   "day": 24,
    "kind": "sonnet",
    "number": 26,
    "roman": "XXVI",
@@ -581,7 +542,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 27,
+   "day": 25,
    "kind": "sonnet",
    "number": 27,
    "roman": "XXVII",
@@ -602,7 +563,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 28,
+   "day": 26,
    "kind": "sonnet",
    "number": 28,
    "roman": "XXVIII",
@@ -623,7 +584,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 29,
+   "day": 27,
    "kind": "sonnet",
    "number": 29,
    "roman": "XXIX",
@@ -644,7 +605,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 30,
+   "day": 28,
    "kind": "sonnet",
    "number": 30,
    "roman": "XXX",
@@ -665,7 +626,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 31,
+   "day": 29,
    "kind": "sonnet",
    "number": 31,
    "roman": "XXXI",
@@ -686,7 +647,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 32,
+   "day": 30,
    "kind": "sonnet",
    "number": 32,
    "roman": "XXXII",
@@ -707,7 +668,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 33,
+   "day": 31,
    "kind": "sonnet",
    "number": 33,
    "roman": "XXXIII",
@@ -728,7 +689,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 34,
+   "day": 32,
    "kind": "sonnet",
    "number": 34,
    "roman": "XXXIV",
@@ -749,7 +710,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 35,
+   "day": 33,
    "kind": "sonnet",
    "number": 35,
    "roman": "XXXV",
@@ -770,7 +731,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 36,
+   "day": 34,
    "kind": "sonnet",
    "number": 36,
    "roman": "XXXVI",
@@ -791,7 +752,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 37,
+   "day": 35,
    "kind": "sonnet",
    "number": 37,
    "roman": "XXXVII",
@@ -803,7 +764,7 @@
    "lines": 14,
    "text": "As a decrepit father takes delight\nTo see his active child do deeds of youth,\nSo I, made lame by Fortune’s dearest spite,\nTake all my comfort of thy worth and truth;\nFor whether beauty, birth, or wealth, or wit,\nOr any of these all, or all, or more,\nEntitled in thy parts, do crowned sit,\nI make my love engrafted, to this store:\nSo then I am not lame, poor, nor despis’d,\nWhilst that this shadow doth such substance give\nThat I in thy abundance am suffic’d,\nAnd by a part of all thy glory live.\nLook what is best, that best I wish in thee:\nThis wish I have; then ten times happy me!",
    "couplet": "Look what is best, that best I wish in thee:\nThis wish I have; then ten times happy me!",
-   "note": null,
+   "note": "\"Lame\" here is a metaphor for being held back by bad luck, not a judgment of disability.",
    "published": "Shake-speares Sonnets (1609 Quarto), modernized spelling",
    "full_text_link": "https://www.gutenberg.org/cache/epub/1041/pg1041-images.html",
    "link_lands_on_poem": false,
@@ -812,7 +773,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 38,
+   "day": 36,
    "kind": "sonnet",
    "number": 38,
    "roman": "XXXVIII",
@@ -833,7 +794,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 39,
+   "day": 37,
    "kind": "sonnet",
    "number": 39,
    "roman": "XXXIX",
@@ -854,7 +815,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 40,
+   "day": 38,
    "kind": "sonnet",
    "number": 40,
    "roman": "XL",
@@ -875,7 +836,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 41,
+   "day": 39,
    "kind": "sonnet",
    "number": 41,
    "roman": "XLI",
@@ -896,7 +857,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 42,
+   "day": 40,
    "kind": "sonnet",
    "number": 42,
    "roman": "XLII",
@@ -917,7 +878,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 43,
+   "day": 41,
    "kind": "sonnet",
    "number": 43,
    "roman": "XLIII",
@@ -938,7 +899,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 44,
+   "day": 42,
    "kind": "sonnet",
    "number": 44,
    "roman": "XLIV",
@@ -959,7 +920,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 45,
+   "day": 43,
    "kind": "sonnet",
    "number": 45,
    "roman": "XLV",
@@ -980,7 +941,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 46,
+   "day": 44,
    "kind": "sonnet",
    "number": 46,
    "roman": "XLVI",
@@ -1001,7 +962,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 47,
+   "day": 45,
    "kind": "sonnet",
    "number": 47,
    "roman": "XLVII",
@@ -1022,7 +983,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 48,
+   "day": 46,
    "kind": "sonnet",
    "number": 48,
    "roman": "XLVIII",
@@ -1043,7 +1004,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 49,
+   "day": 47,
    "kind": "sonnet",
    "number": 49,
    "roman": "XLIX",
@@ -1064,7 +1025,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 50,
+   "day": 48,
    "kind": "sonnet",
    "number": 50,
    "roman": "L",
@@ -1085,7 +1046,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 51,
+   "day": 49,
    "kind": "sonnet",
    "number": 51,
    "roman": "LI",
@@ -1106,7 +1067,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 52,
+   "day": 50,
    "kind": "sonnet",
    "number": 52,
    "roman": "LII",
@@ -1127,7 +1088,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 53,
+   "day": 51,
    "kind": "sonnet",
    "number": 53,
    "roman": "LIII",
@@ -1148,7 +1109,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 54,
+   "day": 52,
    "kind": "sonnet",
    "number": 54,
    "roman": "LIV",
@@ -1169,7 +1130,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 55,
+   "day": 53,
    "kind": "sonnet",
    "number": 55,
    "roman": "LV",
@@ -1181,7 +1142,7 @@
    "lines": 14,
    "text": "Not marble, nor the gilded monuments\nOf princes, shall outlive this powerful rhyme;\nBut you shall shine more bright in these contents\nThan unswept stone, besmear’d with sluttish time.\nWhen wasteful war shall statues overturn,\nAnd broils root out the work of masonry,\nNor Mars his sword, nor war’s quick fire shall burn\nThe living record of your memory.\n’Gainst death, and all-oblivious enmity\nShall you pace forth; your praise shall still find room\nEven in the eyes of all posterity\nThat wear this world out to the ending doom.\nSo, till the judgement that yourself arise,\nYou live in this, and dwell in lovers’ eyes.",
    "couplet": "So, till the judgement that yourself arise,\nYou live in this, and dwell in lovers’ eyes.",
-   "note": null,
+   "note": "\"Sluttish\" here means dirty or neglected, not a slur about a person.",
    "published": "Shake-speares Sonnets (1609 Quarto), modernized spelling",
    "full_text_link": "https://www.gutenberg.org/cache/epub/1041/pg1041-images.html",
    "link_lands_on_poem": false,
@@ -1190,7 +1151,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 56,
+   "day": 54,
    "kind": "sonnet",
    "number": 56,
    "roman": "LVI",
@@ -1211,7 +1172,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 57,
+   "day": 55,
    "kind": "sonnet",
    "number": 57,
    "roman": "LVII",
@@ -1223,7 +1184,7 @@
    "lines": 14,
    "text": "Being your slave what should I do but tend,\nUpon the hours, and times of your desire?\nI have no precious time at all to spend;\nNor services to do, till you require.\nNor dare I chide the world-without-end hour,\nWhilst I, my sovereign, watch the clock for you,\nNor think the bitterness of absence sour,\nWhen you have bid your servant once adieu;\nNor dare I question with my jealous thought\nWhere you may be, or your affairs suppose,\nBut, like a sad slave, stay and think of nought\nSave, where you are, how happy you make those.\nSo true a fool is love, that in your will,\nThough you do anything, he thinks no ill.",
    "couplet": "So true a fool is love, that in your will,\nThough you do anything, he thinks no ill.",
-   "note": null,
+   "note": "\"Slave\" is a love metaphor for devoted service.",
    "published": "Shake-speares Sonnets (1609 Quarto), modernized spelling",
    "full_text_link": "https://www.gutenberg.org/cache/epub/1041/pg1041-images.html",
    "link_lands_on_poem": false,
@@ -1232,7 +1193,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 58,
+   "day": 56,
    "kind": "sonnet",
    "number": 58,
    "roman": "LVIII",
@@ -1244,7 +1205,7 @@
    "lines": 14,
    "text": "That god forbid, that made me first your slave,\nI should in thought control your times of pleasure,\nOr at your hand the account of hours to crave,\nBeing your vassal, bound to stay your leisure!\nO! let me suffer, being at your beck,\nThe imprison’d absence of your liberty;\nAnd patience, tame to sufferance, bide each check,\nWithout accusing you of injury.\nBe where you list, your charter is so strong\nThat you yourself may privilage your time\nTo what you will; to you it doth belong\nYourself to pardon of self-doing crime.\nI am to wait, though waiting so be hell,\nNot blame your pleasure be it ill or well.",
    "couplet": "I am to wait, though waiting so be hell,\nNot blame your pleasure be it ill or well.",
-   "note": null,
+   "note": "\"Slave\" is a love metaphor for devoted service.",
    "published": "Shake-speares Sonnets (1609 Quarto), modernized spelling",
    "full_text_link": "https://www.gutenberg.org/cache/epub/1041/pg1041-images.html",
    "link_lands_on_poem": false,
@@ -1253,7 +1214,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 59,
+   "day": 57,
    "kind": "sonnet",
    "number": 59,
    "roman": "LIX",
@@ -1274,7 +1235,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 60,
+   "day": 58,
    "kind": "sonnet",
    "number": 60,
    "roman": "LX",
@@ -1295,7 +1256,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 61,
+   "day": 59,
    "kind": "sonnet",
    "number": 61,
    "roman": "LXI",
@@ -1316,7 +1277,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 62,
+   "day": 60,
    "kind": "sonnet",
    "number": 62,
    "roman": "LXII",
@@ -1337,7 +1298,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 63,
+   "day": 61,
    "kind": "sonnet",
    "number": 63,
    "roman": "LXIII",
@@ -1358,7 +1319,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 64,
+   "day": 62,
    "kind": "sonnet",
    "number": 64,
    "roman": "LXIV",
@@ -1379,7 +1340,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 65,
+   "day": 63,
    "kind": "sonnet",
    "number": 65,
    "roman": "LXV",
@@ -1400,7 +1361,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 66,
+   "day": 64,
    "kind": "sonnet",
    "number": 66,
    "roman": "LXVI",
@@ -1412,7 +1373,7 @@
    "lines": 14,
    "text": "Tired with all these, for restful death I cry:\nAs to behold desert a beggar born,\nAnd needy nothing trimm’d in jollity,\nAnd purest faith unhappily forsworn,\nAnd gilded honour shamefully misplac’d,\nAnd maiden virtue rudely strumpeted,\nAnd right perfection wrongfully disgrac’d,\nAnd strength by limping sway disabled\nAnd art made tongue-tied by authority,\nAnd folly, doctor-like, controlling skill,\nAnd simple truth miscall’d simplicity,\nAnd captive good attending captain ill:\nTir’d with all these, from these would I be gone,\nSave that, to die, I leave my love alone.",
    "couplet": "Tir’d with all these, from these would I be gone,\nSave that, to die, I leave my love alone.",
-   "note": null,
+   "note": "\"Strumpeted\" means treated like a prostitute; the line is about virtue being abused.",
    "published": "Shake-speares Sonnets (1609 Quarto), modernized spelling",
    "full_text_link": "https://www.gutenberg.org/cache/epub/1041/pg1041-images.html",
    "link_lands_on_poem": false,
@@ -1421,7 +1382,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 67,
+   "day": 65,
    "kind": "sonnet",
    "number": 67,
    "roman": "LXVII",
@@ -1442,7 +1403,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 68,
+   "day": 66,
    "kind": "sonnet",
    "number": 68,
    "roman": "LXVIII",
@@ -1454,7 +1415,7 @@
    "lines": 14,
    "text": "Thus is his cheek the map of days outworn,\nWhen beauty lived and died as flowers do now,\nBefore these bastard signs of fair were born,\nOr durst inhabit on a living brow;\nBefore the golden tresses of the dead,\nThe right of sepulchres, were shorn away,\nTo live a second life on second head;\nEre beauty’s dead fleece made another gay:\nIn him those holy antique hours are seen,\nWithout all ornament, itself and true,\nMaking no summer of another’s green,\nRobbing no old to dress his beauty new;\nAnd him as for a map doth Nature store,\nTo show false Art what beauty was of yore.",
    "couplet": "And him as for a map doth Nature store,\nTo show false Art what beauty was of yore.",
-   "note": null,
+   "note": "\"Bastard\" here means false or illegitimate (fake beauty), not a personal insult.",
    "published": "Shake-speares Sonnets (1609 Quarto), modernized spelling",
    "full_text_link": "https://www.gutenberg.org/cache/epub/1041/pg1041-images.html",
    "link_lands_on_poem": false,
@@ -1463,7 +1424,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 69,
+   "day": 67,
    "kind": "sonnet",
    "number": 69,
    "roman": "LXIX",
@@ -1484,7 +1445,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 70,
+   "day": 68,
    "kind": "sonnet",
    "number": 70,
    "roman": "LXX",
@@ -1505,7 +1466,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 71,
+   "day": 69,
    "kind": "sonnet",
    "number": 71,
    "roman": "LXXI",
@@ -1526,28 +1487,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 72,
-   "kind": "sonnet",
-   "number": 72,
-   "roman": "LXXII",
-   "title": "Sonnet 72",
-   "first_line": "O! lest the world should task you to recite",
-   "groups": [
-    "Fair Youth"
-   ],
-   "lines": 14,
-   "text": "O! lest the world should task you to recite\nWhat merit lived in me, that you should love\nAfter my death, dear love, forget me quite,\nFor you in me can nothing worthy prove;\nUnless you would devise some virtuous lie,\nTo do more for me than mine own desert,\nAnd hang more praise upon deceased I\nThan niggard truth would willingly impart:\nO! lest your true love may seem false in this\nThat you for love speak well of me untrue,\nMy name be buried where my body is,\nAnd live no more to shame nor me nor you.\nFor I am shamed by that which I bring forth,\nAnd so should you, to love things nothing worth.",
-   "couplet": "For I am shamed by that which I bring forth,\nAnd so should you, to love things nothing worth.",
-   "note": null,
-   "published": "Shake-speares Sonnets (1609 Quarto), modernized spelling",
-   "full_text_link": "https://www.gutenberg.org/cache/epub/1041/pg1041-images.html",
-   "link_lands_on_poem": false,
-   "look_for": "LXXII",
-   "verified": true,
-   "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
-  },
-  {
-   "day": 73,
+   "day": 70,
    "kind": "sonnet",
    "number": 73,
    "roman": "LXXIII",
@@ -1568,7 +1508,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 74,
+   "day": 71,
    "kind": "sonnet",
    "number": 74,
    "roman": "LXXIV",
@@ -1589,7 +1529,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 75,
+   "day": 72,
    "kind": "sonnet",
    "number": 75,
    "roman": "LXXV",
@@ -1610,7 +1550,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 76,
+   "day": 73,
    "kind": "sonnet",
    "number": 76,
    "roman": "LXXVI",
@@ -1631,7 +1571,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 77,
+   "day": 74,
    "kind": "sonnet",
    "number": 77,
    "roman": "LXXVII",
@@ -1652,7 +1592,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 78,
+   "day": 75,
    "kind": "sonnet",
    "number": 78,
    "roman": "LXXVIII",
@@ -1674,7 +1614,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 79,
+   "day": 76,
    "kind": "sonnet",
    "number": 79,
    "roman": "LXXIX",
@@ -1696,7 +1636,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 80,
+   "day": 77,
    "kind": "sonnet",
    "number": 80,
    "roman": "LXXX",
@@ -1718,7 +1658,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 81,
+   "day": 78,
    "kind": "sonnet",
    "number": 81,
    "roman": "LXXXI",
@@ -1740,7 +1680,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 82,
+   "day": 79,
    "kind": "sonnet",
    "number": 82,
    "roman": "LXXXII",
@@ -1762,7 +1702,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 83,
+   "day": 80,
    "kind": "sonnet",
    "number": 83,
    "roman": "LXXXIII",
@@ -1784,7 +1724,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 84,
+   "day": 81,
    "kind": "sonnet",
    "number": 84,
    "roman": "LXXXIV",
@@ -1806,7 +1746,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 85,
+   "day": 82,
    "kind": "sonnet",
    "number": 85,
    "roman": "LXXXV",
@@ -1828,7 +1768,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 86,
+   "day": 83,
    "kind": "sonnet",
    "number": 86,
    "roman": "LXXXVI",
@@ -1850,7 +1790,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 87,
+   "day": 84,
    "kind": "sonnet",
    "number": 87,
    "roman": "LXXXVII",
@@ -1871,7 +1811,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 88,
+   "day": 85,
    "kind": "sonnet",
    "number": 88,
    "roman": "LXXXVIII",
@@ -1892,7 +1832,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 89,
+   "day": 86,
    "kind": "sonnet",
    "number": 89,
    "roman": "LXXXIX",
@@ -1904,7 +1844,7 @@
    "lines": 14,
    "text": "Say that thou didst forsake me for some fault,\nAnd I will comment upon that offence:\nSpeak of my lameness, and I straight will halt,\nAgainst thy reasons making no defence.\nThou canst not love disgrace me half so ill,\nTo set a form upon desired change,\nAs I’ll myself disgrace; knowing thy will,\nI will acquaintance strangle, and look strange;\nBe absent from thy walks; and in my tongue\nThy sweet beloved name no more shall dwell,\nLest I, too much profane, should do it wrong,\nAnd haply of our old acquaintance tell.\nFor thee, against my self I’ll vow debate,\nFor I must ne’er love him whom thou dost hate.",
    "couplet": "For thee, against my self I’ll vow debate,\nFor I must ne’er love him whom thou dost hate.",
-   "note": null,
+   "note": "\"Lameness\" here is figurative: the speaker offers to limp if the beloved finds fault.",
    "published": "Shake-speares Sonnets (1609 Quarto), modernized spelling",
    "full_text_link": "https://www.gutenberg.org/cache/epub/1041/pg1041-images.html",
    "link_lands_on_poem": false,
@@ -1913,7 +1853,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 90,
+   "day": 87,
    "kind": "sonnet",
    "number": 90,
    "roman": "XC",
@@ -1934,7 +1874,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 91,
+   "day": 88,
    "kind": "sonnet",
    "number": 91,
    "roman": "XCI",
@@ -1955,7 +1895,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 92,
+   "day": 89,
    "kind": "sonnet",
    "number": 92,
    "roman": "XCII",
@@ -1976,7 +1916,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 93,
+   "day": 90,
    "kind": "sonnet",
    "number": 93,
    "roman": "XCIII",
@@ -1997,7 +1937,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 94,
+   "day": 91,
    "kind": "sonnet",
    "number": 94,
    "roman": "XCIV",
@@ -2018,7 +1958,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 95,
+   "day": 92,
    "kind": "sonnet",
    "number": 95,
    "roman": "XCV",
@@ -2039,7 +1979,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 96,
+   "day": 93,
    "kind": "sonnet",
    "number": 96,
    "roman": "XCVI",
@@ -2060,7 +2000,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 97,
+   "day": 94,
    "kind": "sonnet",
    "number": 97,
    "roman": "XCVII",
@@ -2081,7 +2021,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 98,
+   "day": 95,
    "kind": "sonnet",
    "number": 98,
    "roman": "XCVIII",
@@ -2102,7 +2042,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 99,
+   "day": 96,
    "kind": "sonnet",
    "number": 99,
    "roman": "XCIX",
@@ -2123,7 +2063,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 100,
+   "day": 97,
    "kind": "sonnet",
    "number": 100,
    "roman": "C",
@@ -2144,7 +2084,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 101,
+   "day": 98,
    "kind": "sonnet",
    "number": 101,
    "roman": "CI",
@@ -2165,7 +2105,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 102,
+   "day": 99,
    "kind": "sonnet",
    "number": 102,
    "roman": "CII",
@@ -2186,7 +2126,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 103,
+   "day": 100,
    "kind": "sonnet",
    "number": 103,
    "roman": "CIII",
@@ -2207,7 +2147,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 104,
+   "day": 101,
    "kind": "sonnet",
    "number": 104,
    "roman": "CIV",
@@ -2228,7 +2168,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 105,
+   "day": 102,
    "kind": "sonnet",
    "number": 105,
    "roman": "CV",
@@ -2249,7 +2189,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 106,
+   "day": 103,
    "kind": "sonnet",
    "number": 106,
    "roman": "CVI",
@@ -2270,7 +2210,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 107,
+   "day": 104,
    "kind": "sonnet",
    "number": 107,
    "roman": "CVII",
@@ -2291,7 +2231,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 108,
+   "day": 105,
    "kind": "sonnet",
    "number": 108,
    "roman": "CVIII",
@@ -2312,7 +2252,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 109,
+   "day": 106,
    "kind": "sonnet",
    "number": 109,
    "roman": "CIX",
@@ -2333,7 +2273,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 110,
+   "day": 107,
    "kind": "sonnet",
    "number": 110,
    "roman": "CX",
@@ -2354,7 +2294,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 111,
+   "day": 108,
    "kind": "sonnet",
    "number": 111,
    "roman": "CXI",
@@ -2375,7 +2315,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 112,
+   "day": 109,
    "kind": "sonnet",
    "number": 112,
    "roman": "CXII",
@@ -2396,7 +2336,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 113,
+   "day": 110,
    "kind": "sonnet",
    "number": 113,
    "roman": "CXIII",
@@ -2417,7 +2357,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 114,
+   "day": 111,
    "kind": "sonnet",
    "number": 114,
    "roman": "CXIV",
@@ -2438,7 +2378,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 115,
+   "day": 112,
    "kind": "sonnet",
    "number": 115,
    "roman": "CXV",
@@ -2459,7 +2399,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 116,
+   "day": 113,
    "kind": "sonnet",
    "number": 116,
    "roman": "CXVI",
@@ -2480,7 +2420,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 117,
+   "day": 114,
    "kind": "sonnet",
    "number": 117,
    "roman": "CXVII",
@@ -2501,7 +2441,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 118,
+   "day": 115,
    "kind": "sonnet",
    "number": 118,
    "roman": "CXVIII",
@@ -2522,7 +2462,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 119,
+   "day": 116,
    "kind": "sonnet",
    "number": 119,
    "roman": "CXIX",
@@ -2543,7 +2483,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 120,
+   "day": 117,
    "kind": "sonnet",
    "number": 120,
    "roman": "CXX",
@@ -2564,7 +2504,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 121,
+   "day": 118,
    "kind": "sonnet",
    "number": 121,
    "roman": "CXXI",
@@ -2585,7 +2525,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 122,
+   "day": 119,
    "kind": "sonnet",
    "number": 122,
    "roman": "CXXII",
@@ -2606,7 +2546,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 123,
+   "day": 120,
    "kind": "sonnet",
    "number": 123,
    "roman": "CXXIII",
@@ -2627,7 +2567,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 124,
+   "day": 121,
    "kind": "sonnet",
    "number": 124,
    "roman": "CXXIV",
@@ -2639,7 +2579,7 @@
    "lines": 14,
    "text": "If my dear love were but the child of state,\nIt might for Fortune’s bastard be unfather’d,\nAs subject to Time’s love or to Time’s hate,\nWeeds among weeds, or flowers with flowers gather’d.\nNo, it was builded far from accident;\nIt suffers not in smiling pomp, nor falls\nUnder the blow of thralled discontent,\nWhereto th’ inviting time our fashion calls:\nIt fears not policy, that heretic,\nWhich works on leases of short-number’d hours,\nBut all alone stands hugely politic,\nThat it nor grows with heat, nor drowns with showers.\nTo this I witness call the fools of time,\nWhich die for goodness, who have lived for crime.",
    "couplet": "To this I witness call the fools of time,\nWhich die for goodness, who have lived for crime.",
-   "note": null,
+   "note": "\"Bastard\" here means a child of chance, not a personal insult.",
    "published": "Shake-speares Sonnets (1609 Quarto), modernized spelling",
    "full_text_link": "https://www.gutenberg.org/cache/epub/1041/pg1041-images.html",
    "link_lands_on_poem": false,
@@ -2648,7 +2588,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 125,
+   "day": 122,
    "kind": "sonnet",
    "number": 125,
    "roman": "CXXV",
@@ -2669,7 +2609,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 126,
+   "day": 123,
    "kind": "sonnet",
    "number": 126,
    "roman": "CXXVI",
@@ -2690,7 +2630,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 127,
+   "day": 124,
    "kind": "sonnet",
    "number": 127,
    "roman": "CXXVII",
@@ -2702,7 +2642,7 @@
    "lines": 14,
    "text": "In the old age black was not counted fair,\nOr if it were, it bore not beauty’s name;\nBut now is black beauty’s successive heir,\nAnd beauty slander’d with a bastard shame:\nFor since each hand hath put on Nature’s power,\nFairing the foul with Art’s false borrowed face,\nSweet beauty hath no name, no holy bower,\nBut is profan’d, if not lives in disgrace.\nTherefore my mistress’ eyes are raven black,\nHer eyes so suited, and they mourners seem\nAt such who, not born fair, no beauty lack,\nSland’ring creation with a false esteem:\nYet so they mourn becoming of their woe,\nThat every tongue says beauty should look so.",
    "couplet": "Yet so they mourn becoming of their woe,\nThat every tongue says beauty should look so.",
-   "note": "The first of the sonnets traditionally called the Dark Lady sonnets (127 to 152).",
+   "note": "The first of the Dark Lady sonnets (127 to 152). \"Black\" and \"foul\" contrast dark features with the older fashion for fair skin.",
    "published": "Shake-speares Sonnets (1609 Quarto), modernized spelling",
    "full_text_link": "https://www.gutenberg.org/cache/epub/1041/pg1041-images.html",
    "link_lands_on_poem": false,
@@ -2711,7 +2651,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 128,
+   "day": 125,
    "kind": "sonnet",
    "number": 128,
    "roman": "CXXVIII",
@@ -2732,7 +2672,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 129,
+   "day": 126,
    "kind": "sonnet",
    "number": 129,
    "roman": "CXXIX",
@@ -2744,7 +2684,7 @@
    "lines": 14,
    "text": "The expense of spirit in a waste of shame\nIs lust in action: and till action, lust\nIs perjur’d, murderous, bloody, full of blame,\nSavage, extreme, rude, cruel, not to trust;\nEnjoy’d no sooner but despised straight;\nPast reason hunted; and no sooner had,\nPast reason hated, as a swallow’d bait,\nOn purpose laid to make the taker mad:\nMad in pursuit and in possession so;\nHad, having, and in quest, to have extreme;\nA bliss in proof, and proved, a very woe;\nBefore, a joy propos’d; behind a dream.\nAll this the world well knows; yet none knows well\nTo shun the heaven that leads men to this hell.",
    "couplet": "All this the world well knows; yet none knows well\nTo shun the heaven that leads men to this hell.",
-   "note": null,
+   "note": "A frank poem about lust and its aftermath.",
    "published": "Shake-speares Sonnets (1609 Quarto), modernized spelling",
    "full_text_link": "https://www.gutenberg.org/cache/epub/1041/pg1041-images.html",
    "link_lands_on_poem": false,
@@ -2753,7 +2693,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 130,
+   "day": 127,
    "kind": "sonnet",
    "number": 130,
    "roman": "CXXX",
@@ -2765,7 +2705,7 @@
    "lines": 14,
    "text": "My mistress’ eyes are nothing like the sun;\nCoral is far more red, than her lips red:\nIf snow be white, why then her breasts are dun;\nIf hairs be wires, black wires grow on her head.\nI have seen roses damask’d, red and white,\nBut no such roses see I in her cheeks;\nAnd in some perfumes is there more delight\nThan in the breath that from my mistress reeks.\nI love to hear her speak, yet well I know\nThat music hath a far more pleasing sound:\nI grant I never saw a goddess go;\nMy mistress, when she walks, treads on the ground:\nAnd yet by heaven, I think my love as rare,\nAs any she belied with false compare.",
    "couplet": "And yet by heaven, I think my love as rare,\nAs any she belied with false compare.",
-   "note": null,
+   "note": "\"Black wires\" describes dark hair against the usual fair-haired ideal.",
    "published": "Shake-speares Sonnets (1609 Quarto), modernized spelling",
    "full_text_link": "https://www.gutenberg.org/cache/epub/1041/pg1041-images.html",
    "link_lands_on_poem": false,
@@ -2774,7 +2714,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 131,
+   "day": 128,
    "kind": "sonnet",
    "number": 131,
    "roman": "CXXXI",
@@ -2786,7 +2726,7 @@
    "lines": 14,
    "text": "Thou art as tyrannous, so as thou art,\nAs those whose beauties proudly make them cruel;\nFor well thou know’st to my dear doting heart\nThou art the fairest and most precious jewel.\nYet, in good faith, some say that thee behold,\nThy face hath not the power to make love groan;\nTo say they err I dare not be so bold,\nAlthough I swear it to myself alone.\nAnd to be sure that is not false I swear,\nA thousand groans, but thinking on thy face,\nOne on another’s neck, do witness bear\nThy black is fairest in my judgement’s place.\nIn nothing art thou black save in thy deeds,\nAnd thence this slander, as I think, proceeds.",
    "couplet": "In nothing art thou black save in thy deeds,\nAnd thence this slander, as I think, proceeds.",
-   "note": null,
+   "note": "\"Black\" here moves from complexion to a charge about her deeds.",
    "published": "Shake-speares Sonnets (1609 Quarto), modernized spelling",
    "full_text_link": "https://www.gutenberg.org/cache/epub/1041/pg1041-images.html",
    "link_lands_on_poem": false,
@@ -2795,7 +2735,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 132,
+   "day": 129,
    "kind": "sonnet",
    "number": 132,
    "roman": "CXXXII",
@@ -2807,7 +2747,7 @@
    "lines": 14,
    "text": "Thine eyes I love, and they, as pitying me,\nKnowing thy heart torment me with disdain,\nHave put on black and loving mourners be,\nLooking with pretty ruth upon my pain.\nAnd truly not the morning sun of heaven\nBetter becomes the grey cheeks of the east,\nNor that full star that ushers in the even,\nDoth half that glory to the sober west,\nAs those two mourning eyes become thy face:\nO! let it then as well beseem thy heart\nTo mourn for me since mourning doth thee grace,\nAnd suit thy pity like in every part.\nThen will I swear beauty herself is black,\nAnd all they foul that thy complexion lack.",
    "couplet": "Then will I swear beauty herself is black,\nAnd all they foul that thy complexion lack.",
-   "note": null,
+   "note": "The couplet praises a dark complexion and calls fair ones \"foul\" by contrast.",
    "published": "Shake-speares Sonnets (1609 Quarto), modernized spelling",
    "full_text_link": "https://www.gutenberg.org/cache/epub/1041/pg1041-images.html",
    "link_lands_on_poem": false,
@@ -2816,7 +2756,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 133,
+   "day": 130,
    "kind": "sonnet",
    "number": 133,
    "roman": "CXXXIII",
@@ -2828,7 +2768,7 @@
    "lines": 14,
    "text": "Beshrew that heart that makes my heart to groan\nFor that deep wound it gives my friend and me!\nIs’t not enough to torture me alone,\nBut slave to slavery my sweet’st friend must be?\nMe from myself thy cruel eye hath taken,\nAnd my next self thou harder hast engross’d:\nOf him, myself, and thee I am forsaken;\nA torment thrice three-fold thus to be cross’d:\nPrison my heart in thy steel bosom’s ward,\nBut then my friend’s heart let my poor heart bail;\nWhoe’er keeps me, let my heart be his guard;\nThou canst not then use rigour in my jail:\nAnd yet thou wilt; for I, being pent in thee,\nPerforce am thine, and all that is in me.",
    "couplet": "And yet thou wilt; for I, being pent in thee,\nPerforce am thine, and all that is in me.",
-   "note": null,
+   "note": "\"Slave to slavery\" is a love metaphor for being bound twice over.",
    "published": "Shake-speares Sonnets (1609 Quarto), modernized spelling",
    "full_text_link": "https://www.gutenberg.org/cache/epub/1041/pg1041-images.html",
    "link_lands_on_poem": false,
@@ -2837,7 +2777,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 134,
+   "day": 131,
    "kind": "sonnet",
    "number": 134,
    "roman": "CXXXIV",
@@ -2858,7 +2798,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 135,
+   "day": 132,
    "kind": "sonnet",
    "number": 135,
    "roman": "CXXXV",
@@ -2870,7 +2810,7 @@
    "lines": 14,
    "text": "Whoever hath her wish, thou hast thy ‘Will,’\nAnd ‘Will’ to boot, and ‘Will’ in over-plus;\nMore than enough am I that vex’d thee still,\nTo thy sweet will making addition thus.\nWilt thou, whose will is large and spacious,\nNot once vouchsafe to hide my will in thine?\nShall will in others seem right gracious,\nAnd in my will no fair acceptance shine?\nThe sea, all water, yet receives rain still,\nAnd in abundance addeth to his store;\nSo thou, being rich in ‘Will,’ add to thy ‘Will’\nOne will of mine, to make thy large will more.\nLet no unkind ‘No’ fair beseechers kill;\nThink all but one, and me in that one ‘Will.’",
    "couplet": "Let no unkind ‘No’ fair beseechers kill;\nThink all but one, and me in that one ‘Will.’",
-   "note": "One of the \"Will\" sonnets, which play on the word will as a name and as desire.",
+   "note": "One of the \"Will\" sonnets: the word plays on a name, a wish, and sexual desire.",
    "published": "Shake-speares Sonnets (1609 Quarto), modernized spelling",
    "full_text_link": "https://www.gutenberg.org/cache/epub/1041/pg1041-images.html",
    "link_lands_on_poem": false,
@@ -2879,7 +2819,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 136,
+   "day": 133,
    "kind": "sonnet",
    "number": 136,
    "roman": "CXXXVI",
@@ -2891,7 +2831,7 @@
    "lines": 14,
    "text": "If thy soul check thee that I come so near,\nSwear to thy blind soul that I was thy ‘Will’,\nAnd will, thy soul knows, is admitted there;\nThus far for love, my love-suit, sweet, fulfil.\n‘Will’, will fulfil the treasure of thy love,\nAy, fill it full with wills, and my will one.\nIn things of great receipt with ease we prove\nAmong a number one is reckon’d none:\nThen in the number let me pass untold,\nThough in thy store’s account I one must be;\nFor nothing hold me, so it please thee hold\nThat nothing me, a something sweet to thee:\nMake but my name thy love, and love that still,\nAnd then thou lov’st me for my name is ‘Will.’",
    "couplet": "Make but my name thy love, and love that still,\nAnd then thou lov’st me for my name is ‘Will.’",
-   "note": "One of the \"Will\" sonnets, which play on the word will as a name and as desire.",
+   "note": "One of the \"Will\" sonnets: the word plays on a name, a wish, and sexual desire.",
    "published": "Shake-speares Sonnets (1609 Quarto), modernized spelling",
    "full_text_link": "https://www.gutenberg.org/cache/epub/1041/pg1041-images.html",
    "link_lands_on_poem": false,
@@ -2900,7 +2840,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 137,
+   "day": 134,
    "kind": "sonnet",
    "number": 137,
    "roman": "CXXXVII",
@@ -2921,7 +2861,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 138,
+   "day": 135,
    "kind": "sonnet",
    "number": 138,
    "roman": "CXXXVIII",
@@ -2942,7 +2882,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 139,
+   "day": 136,
    "kind": "sonnet",
    "number": 139,
    "roman": "CXXXIX",
@@ -2963,7 +2903,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 140,
+   "day": 137,
    "kind": "sonnet",
    "number": 140,
    "roman": "CXL",
@@ -2984,7 +2924,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 141,
+   "day": 138,
    "kind": "sonnet",
    "number": 141,
    "roman": "CXLI",
@@ -3005,7 +2945,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 142,
+   "day": 139,
    "kind": "sonnet",
    "number": 142,
    "roman": "CXLII",
@@ -3026,7 +2966,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 143,
+   "day": 140,
    "kind": "sonnet",
    "number": 143,
    "roman": "CXLIII",
@@ -3038,7 +2978,7 @@
    "lines": 14,
    "text": "Lo, as a careful housewife runs to catch\nOne of her feather’d creatures broke away,\nSets down her babe, and makes all swift dispatch\nIn pursuit of the thing she would have stay;\nWhilst her neglected child holds her in chase,\nCries to catch her whose busy care is bent\nTo follow that which flies before her face,\nNot prizing her poor infant’s discontent;\nSo runn’st thou after that which flies from thee,\nWhilst I thy babe chase thee afar behind;\nBut if thou catch thy hope, turn back to me,\nAnd play the mother’s part, kiss me, be kind;\nSo will I pray that thou mayst have thy ‘Will,’\nIf thou turn back and my loud crying still.",
    "couplet": "So will I pray that thou mayst have thy ‘Will,’\nIf thou turn back and my loud crying still.",
-   "note": null,
+   "note": "Ends with a lighter play on the name \"Will\".",
    "published": "Shake-speares Sonnets (1609 Quarto), modernized spelling",
    "full_text_link": "https://www.gutenberg.org/cache/epub/1041/pg1041-images.html",
    "link_lands_on_poem": false,
@@ -3047,7 +2987,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 144,
+   "day": 141,
    "kind": "sonnet",
    "number": 144,
    "roman": "CXLIV",
@@ -3059,7 +2999,7 @@
    "lines": 14,
    "text": "Two loves I have of comfort and despair,\nWhich like two spirits do suggest me still:\nThe better angel is a man right fair,\nThe worser spirit a woman colour’d ill.\nTo win me soon to hell, my female evil,\nTempteth my better angel from my side,\nAnd would corrupt my saint to be a devil,\nWooing his purity with her foul pride.\nAnd whether that my angel be turn’d fiend,\nSuspect I may, yet not directly tell;\nBut being both from me, both to each friend,\nI guess one angel in another’s hell:\nYet this shall I ne’er know, but live in doubt,\nTill my bad angel fire my good one out.",
    "couplet": "Yet this shall I ne’er know, but live in doubt,\nTill my bad angel fire my good one out.",
-   "note": "A different version of this sonnet was printed in The Passionate Pilgrim in 1599, ten years before the Quarto.",
+   "note": "Also printed in The Passionate Pilgrim (1599). \"Hell\" here is a sexual image as well as a moral one.",
    "published": "Shake-speares Sonnets (1609 Quarto), modernized spelling",
    "full_text_link": "https://www.gutenberg.org/cache/epub/1041/pg1041-images.html",
    "link_lands_on_poem": false,
@@ -3068,7 +3008,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 145,
+   "day": 142,
    "kind": "sonnet",
    "number": 145,
    "roman": "CXLV",
@@ -3089,7 +3029,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 146,
+   "day": 143,
    "kind": "sonnet",
    "number": 146,
    "roman": "CXLVI",
@@ -3110,7 +3050,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 147,
+   "day": 144,
    "kind": "sonnet",
    "number": 147,
    "roman": "CXLVII",
@@ -3122,7 +3062,7 @@
    "lines": 14,
    "text": "My love is as a fever longing still,\nFor that which longer nurseth the disease;\nFeeding on that which doth preserve the ill,\nThe uncertain sickly appetite to please.\nMy reason, the physician to my love,\nAngry that his prescriptions are not kept,\nHath left me, and I desperate now approve\nDesire is death, which physic did except.\nPast cure I am, now Reason is past care,\nAnd frantic-mad with evermore unrest;\nMy thoughts and my discourse as madmen’s are,\nAt random from the truth vainly express’d;\nFor I have sworn thee fair, and thought thee bright,\nWho art as black as hell, as dark as night.",
    "couplet": "For I have sworn thee fair, and thought thee bright,\nWho art as black as hell, as dark as night.",
-   "note": null,
+   "note": "\"Black as hell\" is an insult aimed at the beloved, not a neutral color word.",
    "published": "Shake-speares Sonnets (1609 Quarto), modernized spelling",
    "full_text_link": "https://www.gutenberg.org/cache/epub/1041/pg1041-images.html",
    "link_lands_on_poem": false,
@@ -3131,7 +3071,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 148,
+   "day": 145,
    "kind": "sonnet",
    "number": 148,
    "roman": "CXLVIII",
@@ -3152,7 +3092,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 149,
+   "day": 146,
    "kind": "sonnet",
    "number": 149,
    "roman": "CXLIX",
@@ -3173,7 +3113,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 150,
+   "day": 147,
    "kind": "sonnet",
    "number": 150,
    "roman": "CL",
@@ -3194,7 +3134,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 151,
+   "day": 148,
    "kind": "sonnet",
    "number": 151,
    "roman": "CLI",
@@ -3206,7 +3146,7 @@
    "lines": 14,
    "text": "Love is too young to know what conscience is,\nYet who knows not conscience is born of love?\nThen, gentle cheater, urge not my amiss,\nLest guilty of my faults thy sweet self prove:\nFor, thou betraying me, I do betray\nMy nobler part to my gross body’s treason;\nMy soul doth tell my body that he may\nTriumph in love; flesh stays no farther reason,\nBut rising at thy name doth point out thee,\nAs his triumphant prize. Proud of this pride,\nHe is contented thy poor drudge to be,\nTo stand in thy affairs, fall by thy side.\nNo want of conscience hold it that I call\nHer ‘love,’ for whose dear love I rise and fall.",
    "couplet": "No want of conscience hold it that I call\nHer ‘love,’ for whose dear love I rise and fall.",
-   "note": null,
+   "note": "\"Flesh\" and \"rising\" are a bawdy image of arousal.",
    "published": "Shake-speares Sonnets (1609 Quarto), modernized spelling",
    "full_text_link": "https://www.gutenberg.org/cache/epub/1041/pg1041-images.html",
    "link_lands_on_poem": false,
@@ -3215,7 +3155,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 152,
+   "day": 149,
    "kind": "sonnet",
    "number": 152,
    "roman": "CLII",
@@ -3236,7 +3176,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 153,
+   "day": 150,
    "kind": "sonnet",
    "number": 153,
    "roman": "CLIII",
@@ -3257,7 +3197,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 154,
+   "day": 151,
    "kind": "sonnet",
    "number": 154,
    "roman": "CLIV",
@@ -3278,7 +3218,7 @@
    "source_notes": "Text copied exactly from the linked edition; leading indentation removed."
   },
   {
-   "day": 155,
+   "day": 152,
    "kind": "bonus",
    "number": null,
    "roman": null,
@@ -3300,7 +3240,7 @@
    "source_notes": "Text copied exactly from the linked edition; stage directions and leading indentation removed."
   },
   {
-   "day": 156,
+   "day": 153,
    "kind": "bonus",
    "number": null,
    "roman": null,
@@ -3322,7 +3262,7 @@
    "source_notes": "Text copied exactly from the linked edition; stage directions and leading indentation removed."
   },
   {
-   "day": 157,
+   "day": 154,
    "kind": "bonus",
    "number": null,
    "roman": null,
@@ -3344,7 +3284,7 @@
    "source_notes": "Text copied exactly from the linked edition; stage directions and leading indentation removed."
   },
   {
-   "day": 158,
+   "day": 155,
    "kind": "bonus",
    "number": null,
    "roman": null,
@@ -3366,7 +3306,7 @@
    "source_notes": "Text copied exactly from the linked edition; stage directions and leading indentation removed."
   },
   {
-   "day": 159,
+   "day": 156,
    "kind": "bonus",
    "number": null,
    "roman": null,
@@ -3388,7 +3328,7 @@
    "source_notes": "Text copied exactly from the linked edition; stage directions and leading indentation removed."
   },
   {
-   "day": 160,
+   "day": 157,
    "kind": "bonus",
    "number": null,
    "roman": null,
@@ -3410,7 +3350,7 @@
    "source_notes": "Text copied exactly from the linked edition; stage directions and leading indentation removed."
   },
   {
-   "day": 161,
+   "day": 158,
    "kind": "bonus",
    "number": null,
    "roman": null,
@@ -3423,7 +3363,7 @@
    "lines": 112,
    "text": "‘But quickly on this side the verdict went,\nHis real habitude gave life and grace\nTo appertainings and to ornament,\nAccomplish’d in himself, not in his case;\nAll aids, themselves made fairer by their place,\nCame for additions; yet their purpos’d trim\nPiec’d not his grace, but were all grac’d by him.\n\n‘So on the tip of his subduing tongue\nAll kind of arguments and question deep,\nAll replication prompt, and reason strong,\nFor his advantage still did wake and sleep,\nTo make the weeper laugh, the laugher weep:\nHe had the dialect and different skill,\nCatching all passions in his craft of will.\n\n‘That he did in the general bosom reign\nOf young, of old, and sexes both enchanted,\nTo dwell with him in thoughts, or to remain\nIn personal duty, following where he haunted,\nConsent’s bewitch’d, ere he desire, have granted,\nAnd dialogued for him what he would say,\nAsk’d their own wills, and made their wills obey.\n\n‘Many there were that did his picture get\nTo serve their eyes, and in it put their mind,\nLike fools that in th’ imagination set\nThe goodly objects which abroad they find\nOf lands and mansions, theirs in thought assign’d,\nAnd labouring in moe pleasures to bestow them,\nThan the true gouty landlord which doth owe them.\n\n‘So many have, that never touch’d his hand,\nSweetly suppos’d them mistress of his heart.\nMy woeful self that did in freedom stand,\nAnd was my own fee-simple (not in part)\nWhat with his art in youth, and youth in art,\nThrew my affections in his charmed power,\nReserv’d the stalk and gave him all my flower.\n\n‘Yet did I not, as some my equals did,\nDemand of him, nor being desired yielded,\nFinding myself in honour so forbid,\nWith safest distance I mine honour shielded.\nExperience for me many bulwarks builded\nOf proofs new-bleeding, which remain’d the foil\nOf this false jewel, and his amorous spoil.\n\n‘But ah! Who ever shunn’d by precedent\nThe destin’d ill she must herself assay,\nOr force’d examples ’gainst her own content,\nTo put the by-pass’d perils in her way?\nCounsel may stop a while what will not stay:\nFor when we rage, advice is often seen\nBy blunting us to make our wills more keen.\n\n‘Nor gives it satisfaction to our blood,\nThat we must curb it upon others’ proof,\nTo be forbode the sweets that seems so good,\nFor fear of harms that preach in our behoof.\nO appetite, from judgement stand aloof!\nThe one a palate hath that needs will taste,\nThough reason weep and cry, “It is thy last.”\n\n‘For further I could say, “This man’s untrue”,\nAnd knew the patterns of his foul beguiling;\nHeard where his plants in others’ orchards grew,\nSaw how deceits were gilded in his smiling;\nKnew vows were ever brokers to defiling;\nThought characters and words merely but art,\nAnd bastards of his foul adulterate heart.\n\n‘And long upon these terms I held my city,\nTill thus he ’gan besiege me: “Gentle maid,\nHave of my suffering youth some feeling pity,\nAnd be not of my holy vows afraid:\nThat’s to ye sworn, to none was ever said,\nFor feasts of love I have been call’d unto,\nTill now did ne’er invite, nor never woo.\n\n‘“All my offences that abroad you see\nAre errors of the blood, none of the mind:\nLove made them not; with acture they may be,\nWhere neither party is nor true nor kind,\nThey sought their shame that so their shame did find,\nAnd so much less of shame in me remains,\nBy how much of me their reproach contains.\n\n‘“Among the many that mine eyes have seen,\nNot one whose flame my heart so much as warmed,\nOr my affection put to th’ smallest teen,\nOr any of my leisures ever charmed:\nHarm have I done to them, but ne’er was harmed;\nKept hearts in liveries, but mine own was free,\nAnd reign’d commanding in his monarchy.\n\n‘“Look here what tributes wounded fancies sent me,\nOf pallid pearls and rubies red as blood,\nFiguring that they their passions likewise lent me\nOf grief and blushes, aptly understood\nIn bloodless white and the encrimson’d mood;\nEffects of terror and dear modesty,\nEncamp’d in hearts, but fighting outwardly.\n\n‘“And, lo! behold these talents of their hair,\nWith twisted metal amorously empleach’d,\nI have receiv’d from many a several fair,\nTheir kind acceptance weepingly beseech’d,\nWith th’ annexions of fair gems enrich’d,\nAnd deep-brain’d sonnets that did amplify\nEach stone’s dear nature, worth and quality.\n\n‘“The diamond, why ’twas beautiful and hard,\nWhereto his invis’d properties did tend,\nThe deep green emerald, in whose fresh regard\nWeak sights their sickly radiance do amend;\nThe heaven-hued sapphire and the opal blend\nWith objects manifold; each several stone,\nWith wit well blazon’d smil’d, or made some moan.\n\n‘“Lo, all these trophies of affections hot,\nOf pensiv’d and subdued desires the tender,\nNature hath charg’d me that I hoard them not,\nBut yield them up where I myself must render,\nThat is, to you, my origin and ender:\nFor these of force must your oblations be,\nSince I their altar, you empatron me.",
    "couplet": null,
-   "note": null,
+   "note": "\"Bastards\" here means false offspring of a corrupt heart.",
    "published": "Shake-speares Sonnets (1609 Quarto), where it follows Sonnet 154",
    "full_text_link": "https://www.gutenberg.org/cache/epub/1543/pg1543-images.html",
    "link_lands_on_poem": true,
@@ -3432,7 +3372,7 @@
    "source_notes": "Text copied exactly from the linked edition; stage directions and leading indentation removed."
   },
   {
-   "day": 162,
+   "day": 159,
    "kind": "bonus",
    "number": null,
    "roman": null,
@@ -3454,7 +3394,7 @@
    "source_notes": "Text copied exactly from the linked edition; stage directions and leading indentation removed."
   },
   {
-   "day": 163,
+   "day": 160,
    "kind": "bonus",
    "number": null,
    "roman": null,

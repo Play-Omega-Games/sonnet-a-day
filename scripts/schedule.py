@@ -9,7 +9,7 @@ Rules (same as the daily skill):
 - weekdays: Monday to Friday only.
 - every-other-day: START_DATE, then every second calendar date (even offsets).
 - paused dates deliver nothing and push the rest back; they never count as missed.
-- bonus off: the plan ends after Sonnet 154.
+- bonus off: the plan ends after the last kept sonnet (Quarto 154).
 """
 import datetime as dt, json, os, sys
 

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""Build plans/sonnets.json: all 154 sonnets (1609 Quarto order, modernized
-public-domain text) plus optional bonus days, from the stored source files.
+"""Build plans/sonnets.json: 151 of the 154 sonnets (1609 Quarto order,
+modernized public-domain text; Quarto 1, 4 and 72 omitted) plus optional
+bonus days, from the stored source files.
 
 Usage: python3 scripts/build.py [--fetch]
   --fetch downloads any missing source file into src/ first.
@@ -15,6 +16,8 @@ OUT = os.path.join(ROOT, "plans", "sonnets.json")
 BASE = "https://www.gutenberg.org/cache/epub/{n}/pg{n}{s}"
 BOOKS = [1041, 1513, 1510, 1521, 1543, 1525]   # sonnets, R&J, LLL, Henry V, A Lover's Complaint, Phoenix
 UA = {"User-Agent": "Mozilla/5.0 (sonnet-a-day build)"}
+# Quarto numbers omitted: Early Modern wording that reads badly today (niggard / niggarding).
+SKIP = {1, 4, 72}
 
 def fetch(n, suffix):
     path = os.path.join(SRC, f"pg{n}{suffix}")
@@ -63,20 +66,37 @@ def groups(n):
     if n >= 153: g.append("Cupid sonnets")
     return g
 
-# Short, well-established facts the bot may mention. Our own words, no em dashes.
+# Short background facts and plain-English word glosses. Our own words, no em dashes.
+# Medium-flag glosses explain archaic or loaded words for modern readers.
 NOTES = {
     99: "This sonnet has 15 lines, one more than the usual 14.",
     126: "Twelve lines in six rhymed couplets. The 1609 Quarto prints two empty pairs of brackets where lines 13 and 14 would be. It closes the Fair Youth group.",
     138: "A different version of this sonnet was printed in The Passionate Pilgrim in 1599, ten years before the Quarto.",
-    144: "A different version of this sonnet was printed in The Passionate Pilgrim in 1599, ten years before the Quarto.",
     145: "Written in eight-syllable lines instead of the usual ten. Some readers hear a pun on the name Hathaway in \"hate away\".",
-    135: "One of the \"Will\" sonnets, which play on the word will as a name and as desire.",
-    136: "One of the \"Will\" sonnets, which play on the word will as a name and as desire.",
     153: "Sonnets 153 and 154 are two versions of one old Greek epigram about Cupid's torch.",
     154: "Sonnets 153 and 154 are two versions of one old Greek epigram about Cupid's torch. This is the last sonnet in the 1609 Quarto.",
-    1: "Sonnets 1 to 17 urge a young man to marry and have children, so readers often call them the marriage sonnets.",
     78: "Sonnets 78 to 86 are often read together as the Rival Poet sonnets, about another poet competing for the young man's favour.",
-    127: "The first of the sonnets traditionally called the Dark Lady sonnets (127 to 152).",
+    20: "\"Prick’d\" here means marked or chosen; the line also plays on a bawdy sense of the word.",
+    37: "\"Lame\" here is a metaphor for being held back by bad luck, not a judgment of disability.",
+    55: "\"Sluttish\" here means dirty or neglected, not a slur about a person.",
+    57: "\"Slave\" is a love metaphor for devoted service.",
+    58: "\"Slave\" is a love metaphor for devoted service.",
+    66: "\"Strumpeted\" means treated like a prostitute; the line is about virtue being abused.",
+    68: "\"Bastard\" here means false or illegitimate (fake beauty), not a personal insult.",
+    89: "\"Lameness\" here is figurative: the speaker offers to limp if the beloved finds fault.",
+    124: "\"Bastard\" here means a child of chance, not a personal insult.",
+    127: "The first of the Dark Lady sonnets (127 to 152). \"Black\" and \"foul\" contrast dark features with the older fashion for fair skin.",
+    129: "A frank poem about lust and its aftermath.",
+    130: "\"Black wires\" describes dark hair against the usual fair-haired ideal.",
+    131: "\"Black\" here moves from complexion to a charge about her deeds.",
+    132: "The couplet praises a dark complexion and calls fair ones \"foul\" by contrast.",
+    133: "\"Slave to slavery\" is a love metaphor for being bound twice over.",
+    135: "One of the \"Will\" sonnets: the word plays on a name, a wish, and sexual desire.",
+    136: "One of the \"Will\" sonnets: the word plays on a name, a wish, and sexual desire.",
+    143: "Ends with a lighter play on the name \"Will\".",
+    144: "Also printed in The Passionate Pilgrim (1599). \"Hell\" here is a sexual image as well as a moral one.",
+    147: "\"Black as hell\" is an insult aimed at the beloved, not a neutral color word.",
+    151: "\"Flesh\" and \"rising\" are a bawdy image of arousal.",
 }
 
 def sonnets():
@@ -138,9 +158,15 @@ def bonus():
     assert len(stanzas) == 47 and all(len(s.split("\n")) == 7 for s in stanzas), [len(s.split("\n")) for s in stanzas]
     cuts = [(0, 16), (16, 32), (32, 47)]
     for k, (a, b) in enumerate(cuts, 1):
+        if k == 1:
+            note = "A Lover's Complaint is the long poem printed after the sonnets in the 1609 Quarto."
+        elif k == 2:
+            note = "\"Bastards\" here means false offspring of a corrupt heart."
+        else:
+            note = None
         B.append(dict(title=f"A Lover's Complaint, part {k} of 3", source=1543, form=f"Stanzas {a+1} to {b}, in rhyme royal",
                       text="\n\n".join(stanzas[a:b]), published="Shake-speares Sonnets (1609 Quarto), where it follows Sonnet 154",
-                      note="A Lover's Complaint is the long poem printed after the sonnets in the 1609 Quarto." if k == 1 else None))
+                      note=note))
     ph = body(read(1525))
     ph = clean(ph[ph.index("Let the bird of loudest lay"):].split("\n"))
     B.append(dict(title="The Phoenix and the Turtle", source=1525, form="Poem in quatrains, ending in a Threnos (a lament)",
@@ -155,14 +181,17 @@ def main():
             fetch(n, ".txt"); fetch(n, "-images.html")
     days = []
     for n, rn, text in sonnets():
+        if n in SKIP:
+            continue
         lines = text.split("\n")
-        days.append(dict(day=n, kind="sonnet", number=n, roman=rn, title=f"Sonnet {n}",
+        days.append(dict(day=len(days) + 1, kind="sonnet", number=n, roman=rn, title=f"Sonnet {n}",
                          first_line=lines[0], groups=groups(n), lines=len(lines), text=text,
                          couplet="\n".join(lines[-2:]), note=NOTES.get(n),
                          published="Shake-speares Sonnets (1609 Quarto), modernized spelling",
                          full_text_link=BASE.format(n=1041, s="-images.html"), link_lands_on_poem=False,
                          look_for=rn, verified=True,
                          source_notes="Text copied exactly from the linked edition; leading indentation removed."))
+    n_sonnets = len(days)
     for b in bonus():
         lines = b["text"].split("\n")
         n = b["source"]
@@ -179,10 +208,11 @@ def main():
                          source_notes="Text copied exactly from the linked edition; stage directions and leading indentation removed."))
     meta = dict(
         title="Sonnet a Day",
-        days=len(days), sonnets=154, bonus=len(days) - 154,
-        order="1609 Quarto order, Sonnets 1 to 154, then optional bonus days",
-        groups={"Fair Youth": "Sonnets 1 to 126, addressed to a young man",
-                "Marriage sonnets": "Sonnets 1 to 17, urging the young man to marry",
+        days=len(days), sonnets=n_sonnets, bonus=len(days) - n_sonnets,
+        omitted=[1, 4, 72],
+        order="1609 Quarto order, 151 of the 154 sonnets (Quarto 1, 4 and 72 omitted), then optional bonus days",
+        groups={"Fair Youth": "Quarto sonnets 2 to 126 (1, 4 and 72 omitted), addressed to a young man",
+                "Marriage sonnets": "Quarto sonnets 2, 3 and 5 to 17, urging the young man to marry",
                 "Rival Poet": "Sonnets 78 to 86, about a rival poet",
                 "Dark Lady": "Sonnets 127 to 152, about a woman with dark eyes and hair",
                 "Cupid sonnets": "Sonnets 153 and 154, two versions of one Greek epigram",
@@ -192,7 +222,7 @@ def main():
     )
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     json.dump({"meta": meta, "days": days}, open(OUT, "w"), ensure_ascii=False, indent=1)
-    print(f"wrote {OUT}: {len(days)} days ({meta['bonus']} bonus)")
+    print(f"wrote {OUT}: {len(days)} days ({n_sonnets} sonnets, {meta['bonus']} bonus)")
 
 if __name__ == "__main__":
     main()

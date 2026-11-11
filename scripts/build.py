@@ -16,7 +16,7 @@ OUT = os.path.join(ROOT, "plans", "sonnets.json")
 BASE = "https://www.gutenberg.org/cache/epub/{n}/pg{n}{s}"
 BOOKS = [1041, 1513, 1510, 1521, 1543, 1525]   # sonnets, R&J, LLL, Henry V, A Lover's Complaint, Phoenix
 UA = {"User-Agent": "Mozilla/5.0 (sonnet-a-day build)"}
-# Quarto numbers omitted: Early Modern wording that reads badly today (niggard / niggarding).
+# Quarto numbers omitted: wording that reads badly today.
 SKIP = {1, 4, 72}
 
 def fetch(n, suffix):

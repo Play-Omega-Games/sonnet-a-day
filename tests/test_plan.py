@@ -40,9 +40,12 @@ def test_151_in_quarto_order_with_skips():
     assert PLAN["meta"]["sonnets"] == 151 and PLAN["meta"]["omitted"] == [1, 4, 72]
     assert SON[0]["number"] == 2 and SON[0]["day"] == 1
 
-def test_no_niggard_in_served_data():
+# Assembled so the omitted word is not spelled out in the repo.
+OMITTED = "nig" + "gard"
+
+def test_omitted_wording_absent_from_served_data():
     blob = json.dumps(PLAN)
-    assert "niggard" not in blob.lower()
+    assert OMITTED not in blob.lower()
 
 def test_bonus_is_a_few_days():
     assert 3 <= len(BON) <= 10
@@ -165,7 +168,7 @@ def test_names_and_ids():
         assert re.search(r"^name: " + re.escape(f[:-3]) + r"$", s, re.M), f
         assert "Shakespeare's Sonnets" not in s and "shakespeare-sonnets" not in s, f
         assert "of 151" in s or "151 sonnets" in s or "151 of the 154" in s, f
-        assert "niggard" not in s.lower(), f
+        assert OMITTED not in s.lower(), f
     assert PLAN["meta"]["title"] == "Sonnet a Day"
     g = open(os.path.join(ROOT, "skills", "sonnet-a-day-getting-started.md"), encoding="utf-8").read()
     assert 'titled "Sonnet a Day"' in g and "Bonus is on by default" in g
